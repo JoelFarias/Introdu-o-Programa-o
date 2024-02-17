@@ -1,0 +1,15 @@
+Inicio
+  real preco_fabrica, preco_impostos, preco_revendedor, preco_final;
+  cadeia nome;
+
+  escreva("Digite o nome do automóvel: ");
+  leia(nome);
+  escreva("Digite o preço de fábrica: ");
+  leia(preco_fabrica);
+
+  preco_impostos <- preco_fabrica * 0.43; //43% do preço de fábrica
+  preco_revendedor <- preco_fabrica * 0.15; //15% do preço de fábrica
+  preco_final <- preco_fabrica + preco_impostos + preco_revendedor;
+
+  escreva("O preço final do automóvel ", nome, " é de R$", preco_final);
+Fim
