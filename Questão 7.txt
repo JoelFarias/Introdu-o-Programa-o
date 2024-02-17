@@ -1,0 +1,22 @@
+Inicio
+  real soma, media, valor;
+  inteiro contador;
+
+  soma <- 0;
+  contador <- 0;
+
+  enquanto contador < 15 faça
+    escreva("Digite um valor: ");
+    leia(valor);
+    soma <- soma + valor;
+    contador <- contador + 1;
+  fim enquanto
+
+  media <- soma / 15;
+
+  se media > 9 então
+    media <- 10;
+  fim se
+
+  escreva("A média aritmética é: ", media);
+Fim
