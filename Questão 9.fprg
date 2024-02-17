@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="joelc"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-04-21 09:44:00 "/>
+        <attribute name="created" value="am9lbGM7REVTS1RPUC1USlVSUEJROzIwMjMtMDQtMjE7IjA5OjM3OjEwICI7Mjg0OQ=="/>
+        <attribute name="edited" value="am9lbGM7REVTS1RPUC1USlVSUEJROzIwMjMtMDQtMjE7IjA5OjQ0OjAwICI7MTsyOTU0"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="n, i" type="Integer" array="False" size=""/>
+            <declare name="salario, total" type="Real" array="False" size=""/>
+            <output expression="&quot;Quantos empregados na empresa? &quot;" newline="True"/>
+            <input variable="n"/>
+            <assign variable="total" expression="0"/>
+            <for variable="i" start="1" end="n" direction="inc" step="1">
+                <output expression="&quot;Informe o salario bruto de cada empregado &quot;" newline="True"/>
+                <input variable="salario"/>
+                <assign variable="total" expression="total + salario"/>
+            </for>
+            <output expression="&quot;O valor total bruto da folha de pagamento &#233;: &quot; &amp; total &amp; &quot;.&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

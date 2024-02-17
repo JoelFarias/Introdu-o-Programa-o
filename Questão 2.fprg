@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="joelc"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-04-21 06:48:35 "/>
+        <attribute name="created" value="am9lbGM7REVTS1RPUC1USlVSUEJROzIwMjMtMDQtMjE7IjA2OjE4OjA3ICI7Mjg1MQ=="/>
+        <attribute name="edited" value="am9lbGM7REVTS1RPUC1USlVSUEJROzIwMjMtMDQtMjE7IjA2OjQ4OjM1ICI7ODsyOTcw"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="media, n1, n2, n3, n4, n5, n6, n7" type="Real" array="False" size=""/>
+            <output expression="&quot;Por favor, digite o 1 n&#250;mero:&quot;" newline="True"/>
+            <input variable="n1"/>
+            <output expression="&quot;Por favor, digite o 2 n&#250;mero:&quot;" newline="True"/>
+            <input variable="n2"/>
+            <output expression="&quot;Por favor, digite o 3 n&#250;mero:&quot;" newline="True"/>
+            <input variable="n3"/>
+            <output expression="&quot;Por favor, digite o 4 n&#250;mero:&quot;" newline="True"/>
+            <input variable="n4"/>
+            <output expression="&quot;Por favor, digite o 5 n&#250;mero:&quot;" newline="True"/>
+            <input variable="n5"/>
+            <output expression="&quot;Por favor, digite o 6 n&#250;mero:&quot;" newline="True"/>
+            <input variable="n6"/>
+            <output expression="&quot;Por favor, digite o 7 n&#250;mero:&quot;" newline="True"/>
+            <input variable="n7"/>
+            <assign variable="media" expression="(n1+n2+n3+n4+n5+n6+n7)/7"/>
+            <output expression="&quot;O resultado &#233;: &quot; &amp; media &amp; &quot;.&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

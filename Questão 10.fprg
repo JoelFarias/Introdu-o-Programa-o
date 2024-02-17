@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="joelc"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-04-21 09:57:56 "/>
+        <attribute name="created" value="am9lbGM7REVTS1RPUC1USlVSUEJROzIwMjMtMDQtMjE7IjA5OjQ0OjM2ICI7Mjg1NQ=="/>
+        <attribute name="edited" value="am9lbGM7REVTS1RPUC1USlVSUEJROzIwMjMtMDQtMjE7IjA5OjU3OjU2ICI7NDsyOTcy"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="n, i, cont" type="Integer" array="False" size=""/>
+            <declare name="salario, soma, media" type="Real" array="False" size=""/>
+            <output expression="&quot;Quantos empregados na empresa? &quot;" newline="True"/>
+            <input variable="n"/>
+            <assign variable="cont" expression="0"/>
+            <assign variable="soma" expression="0"/>
+            <for variable="i" start="1" end="n" direction="inc" step="1">
+                <output expression="&quot;Informe o salario bruto do empregado &quot;" newline="True"/>
+                <input variable="salario"/>
+            </for>
+            <if expression="salario &gt;= 1045">
+                <then>
+                    <assign variable="soma" expression="soma + salario"/>
+                    <assign variable="cont" expression="cont + 1"/>
+                </then>
+                <else/>
+            </if>
+            <if expression="cont &gt; 0">
+                <then>
+                    <assign variable="media" expression="(soma) / cont"/>
+                    <output expression="&quot;A media dos salarios maiores ou iguais a R$ 1.045,00 e: R$ &quot; &amp; media &amp; &quot;.&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;Nenhum salario maior ou igual a R$ 1.045,00 foi informado.&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

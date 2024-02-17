@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="joelc"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-04-21 09:37:03 "/>
+        <attribute name="created" value="am9lbGM7REVTS1RPUC1USlVSUEJROzIwMjMtMDQtMjE7IjA5OjI1OjE5ICI7Mjg1NQ=="/>
+        <attribute name="edited" value="am9lbGM7REVTS1RPUC1USlVSUEJROzIwMjMtMDQtMjE7IjA5OjM3OjAzICI7MTsyOTU5"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="n1, n2, n3, menor" type="Real" array="False" size=""/>
+            <output expression="&quot;Digite o primeiro n&#250;mero: &quot;" newline="True"/>
+            <input variable="n1"/>
+            <output expression="&quot;Digite o segundo n&#250;mero: &quot;" newline="True"/>
+            <input variable="n2"/>
+            <output expression="&quot;Digite o terceiro n&#250;mero: &quot;" newline="True"/>
+            <input variable="n3"/>
+            <assign variable="menor" expression="n1"/>
+            <if expression="n2 &lt; menor">
+                <then>
+                    <assign variable="menor" expression="n2"/>
+                    <if expression="n3 &lt; menor">
+                        <then>
+                            <assign variable="menor" expression="n3"/>
+                        </then>
+                        <else/>
+                    </if>
+                </then>
+                <else/>
+            </if>
+            <output expression="&quot;O menor n&#250;mero &#233;: &quot; &amp; menor &amp; &quot;.&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

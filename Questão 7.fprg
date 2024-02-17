@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="joelc"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-04-21 09:25:16 "/>
+        <attribute name="created" value="am9lbGM7REVTS1RPUC1USlVSUEJROzIwMjMtMDQtMjE7IjA3OjQwOjQ5ICI7Mjg1Mw=="/>
+        <attribute name="edited" value="am9lbGM7REVTS1RPUC1USlVSUEJROzIwMjMtMDQtMjE7IjA5OjI1OjE2ICI7MTsyOTYw"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="valor, soma, media" type="Real" array="False" size=""/>
+            <declare name="numeros" type="Integer" array="False" size=""/>
+            <assign variable="soma" expression="0"/>
+            <for variable="media" start="1&#13;&#10;" end="15" direction="inc" step="1">
+                <output expression="&quot;Digite os n&#250;meros&quot;" newline="True"/>
+                <input variable="valor"/>
+                <assign variable="soma" expression="soma + valor"/>
+            </for>
+            <assign variable="media" expression="soma / 15"/>
+            <if expression="media&gt;9">
+                <then>
+                    <assign variable="media" expression="10"/>
+                </then>
+                <else/>
+            </if>
+            <output expression="&quot;A media &#233;: &quot; &amp; media &amp; &quot;.&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

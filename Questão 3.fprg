@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="joelc"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-04-21 07:03:14 "/>
+        <attribute name="created" value="am9lbGM7REVTS1RPUC1USlVSUEJROzIwMjMtMDQtMjE7IjA2OjQ4OjQzICI7Mjg1NA=="/>
+        <attribute name="edited" value="am9lbGM7REVTS1RPUC1USlVSUEJROzIwMjMtMDQtMjE7IjA3OjAzOjE0ICI7MTsyOTUy"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="media, n1, n2, n3, n4" type="Real" array="False" size=""/>
+            <declare name="p1, p2, p3, p4" type="Integer" array="False" size=""/>
+            <output expression="&quot;Digite o primeiro n&#250;mero: &quot;" newline="True"/>
+            <input variable="n1"/>
+            <output expression="&quot;Digite o segundo n&#250;mero: &quot;" newline="True"/>
+            <input variable="n2"/>
+            <output expression="&quot;Digite o terceiro n&#250;mero: &quot;" newline="True"/>
+            <input variable="n3"/>
+            <output expression="&quot;Digite o quarto n&#250;mero: &quot;" newline="True"/>
+            <input variable="n4"/>
+            <output expression="&quot;Digite o peso do n&#250;mero 1: &quot;" newline="True"/>
+            <input variable="p1"/>
+            <output expression="&quot;Digite o peso do n&#250;mero 2: &quot;" newline="True"/>
+            <input variable="p2"/>
+            <output expression="&quot;Digite o peso do n&#250;mero 3: &quot;" newline="True"/>
+            <input variable="p3"/>
+            <output expression="&quot;Digite o peso do n&#250;mero 4: &quot;" newline="True"/>
+            <input variable="p4"/>
+            <assign variable="media" expression="(n1*p1 + n2*p2 + n3*p3 + n4*p4) / (p1+p2+p3+p4)"/>
+            <output expression="&quot;A m&#233;dia ponderada dos n&#250;meros digitados &#233;: &quot; &amp; media &amp; &quot;.&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
